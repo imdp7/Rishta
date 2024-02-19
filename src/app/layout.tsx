@@ -5,9 +5,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Shaadi.com | Your Perfect match',
-  description:
-    'NextJS 14 boilerplate with Tailwind, typescript and pre-commit linters and formatters ready to go.'
+  title: 'Darshan Patel'
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
