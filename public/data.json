@@ -1,0 +1,152 @@
+[
+  {
+    "personal_information": [
+      {
+        "title": "Age",
+        "data": "26"
+      },
+      {
+        "title": "Height",
+        "data": "5ft 10\""
+      },
+      {
+        "title": "Date of Birth",
+        "data": "Nov-11-1997"
+      },
+      {
+        "title": "Hometown",
+        "data": "Vadodara"
+      },
+      {
+        "title": "Religion",
+        "data": "Hindu"
+      },
+      {
+        "title": "Community",
+        "data": "Gujarati"
+      },
+      {
+        "title": "Education",
+        "data": "Masters"
+      },
+      {
+        "title": "Career",
+        "data": "Software Engineer"
+      },
+      {
+        "title": "Current City",
+        "data": "Edison NJ"
+      },
+      {
+        "title": "Raised in",
+        "data": "India"
+      }
+    ],
+    "additional_information": [
+      {
+        "title": "Zodiac",
+        "data": "Pieces"
+      },
+      {
+        "title": "Moonsign",
+        "data": "Sagittarius"
+      },
+      {
+        "title": "Langauges",
+        "data": "English, Hindi, Gujarati"
+      },
+      {
+        "title": "Interests",
+        "data": "Travelling, Reading, Movies"
+      },
+      {
+        "title": "Marital Status",
+        "data": "Single"
+      },
+      {
+        "title": "Personal Statement",
+        "data": "Self depenedent, Self Esteemed, looking for an ideal soulmate"
+      }
+    ],
+    "education_work": [
+      {
+        "title": "Education",
+        "data": "New Jersey Institute of Technology (M.S) - 2022"
+      },
+      {
+        "title": "Major",
+        "data": "Computer Science"
+      },
+      {
+        "title": "Work Experience / Occupation",
+        "data": "BMO Capitals, Clearpoolgroup Trading"
+      },
+      {
+        "title": "Income",
+        "data": "Sufficient for prosperous living in USA"
+      }
+    ],
+    "family": [
+      {
+        "title": "Father",
+        "data": "Rajesh Patel (late)"
+      },
+      {
+        "title": "Mother",
+        "data": "Sonal Patel"
+      }
+    ],
+    "social": [
+      {
+        "title": "Instagram",
+        "data": "imdp7"
+      },
+      {
+        "title": "Facebook",
+        "data": "imdp7"
+      },
+      {
+        "title": "Snap",
+        "data": "imdp97"
+      }
+    ],
+    "interests": [
+      {
+        "title": "Fashion",
+        "color": "red"
+      },
+      {
+        "title": "Investments",
+        "color": "blue"
+      },
+      {
+        "title": "Travel",
+        "color": "green"
+      },
+      {
+        "title": "Fitness",
+        "color": "gray"
+      },
+      {
+        "title": "Reading",
+        "color": "yellow"
+      },
+      {
+        "title": "Football",
+        "color": "green"
+      },
+      {
+        "title": "Design",
+        "color": "gray"
+      },
+      {
+        "title": "Comedy",
+        "color": "yellow"
+      },
+      {
+        "title": "Vegeterian",
+        "color": "yellow"
+      }
+    ]
+  }
+]

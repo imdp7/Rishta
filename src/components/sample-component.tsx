@@ -1,48 +1,56 @@
-import Link from 'next/link';
+import {
+  JSXElementConstructor,
+  Key,
+  PromiseLikeOfReactNode,
+  ReactElement,
+  ReactNode,
+  ReactPortal
+} from 'react';
 
-const linkData = [
-  {
-    title: 'Docs',
-    description: 'Find in-depth information about Next.js features and API.',
-    url: 'https://nextjs.org/docs'
-  },
-  {
-    title: 'Learn',
-    description: 'Learn about Next.js in an interactive course with&nbsp;quizzes!',
-    url: 'https://nextjs.org/learn'
-  },
-  {
-    title: 'Templates',
-    description: 'Explore starter templates for Next.js.',
-    url: 'https://vercel.com/templates'
-  },
-  {
-    title: 'Deploy',
-    description: 'Instantly deploy your Next.js site to a shareable URL with Vercel.',
-    url: 'https://vercel.com/new'
-  }
-];
-
-export default function SampleComponent() {
+export default function SampleComponent(props: any) {
   return (
-    <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-      {linkData.map((item, i) => (
-        <Link
-          key={i}
-          href={item.url}
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            {item.title}{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>{item.description}</p>
-        </Link>
-      ))}
+    <div className="max-w-8xl mx-auto py-2">
+      <div className="w-full border border-gray-500">
+        <h2 className="border-b border-gray-400 bg-gray-600 px-5 py-2 text-2xl font-semibold text-white opacity-80">
+          {props.title}
+        </h2>
+        <div className="m-3 grid grid-cols-2 items-center gap-8 text-center md:grid-cols-3 md:text-justify lg:grid-cols-5">
+          {props.data?.map(
+            (
+              item: {
+                title:
+                  | string
+                  | number
+                  | boolean
+                  | ReactElement<any, string | JSXElementConstructor<any>>
+                  | Iterable<ReactNode>
+                  | ReactPortal
+                  | PromiseLikeOfReactNode
+                  | null
+                  | undefined;
+                data:
+                  | string
+                  | number
+                  | boolean
+                  | ReactElement<any, string | JSXElementConstructor<any>>
+                  | Iterable<ReactNode>
+                  | ReactPortal
+                  | PromiseLikeOfReactNode
+                  | null
+                  | undefined;
+              },
+              i: Key | null | undefined
+            ) => (
+              <div key={i}>
+                <p className={`mb-2 justify-center text-center text-base font-bold opacity-50`}>
+                  {item.title}
+                </p>
+                <p className="text-center text-base">{item.data}</p>
+              </div>
+            )
+          )}
+        </div>
+      </div>
     </div>
   );
 }
