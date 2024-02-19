@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/filename-case */
 'use client';
 import { useRef } from 'react';
 // Import Swiper React components
@@ -20,10 +21,10 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 export default function Swipable() {
   const progressCircle = useRef(null);
   const progressContent = useRef(null);
-  const onAutoplayTimeLeft = (s, time, progress) => {
-    progressCircle.current.style.setProperty('--progress', 1 - progress);
-    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
-  };
+  // const onAutoplayTimeLeft = (s: any, time: number, progress: number) => {
+  //   // progressCircle.current?.style.setProperty('--progress', 1 - progress);
+  //   // progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+  // };
   return (
     <div className="max-h-lvh">
       <Swiper
@@ -38,7 +39,7 @@ export default function Swipable() {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        onAutoplayTimeLeft={onAutoplayTimeLeft}
+        // onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
       >
         <SwiperSlide>

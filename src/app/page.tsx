@@ -15,7 +15,7 @@ export default function Home() {
         <div>
           <SampleComponent title="Family Background" data={data[0]?.family} />
           <SampleComponent title="Education / Work Experience" data={data[0]?.education_work} />
-          <Tags data={data[0]?.interests} title="Tags" />
+          {data[0]?.interests && <Tags data={data[0]?.interests} title="Tags" color={''} />}
           <SampleComponent data={data[0]?.social} title="Socials" />
         </div>
       </div>

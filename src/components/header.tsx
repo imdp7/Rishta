@@ -34,10 +34,12 @@ export default function Header() {
             <i className="fa-light fa-user"></i>
             <h3>patel7darshan97@gmail.com</h3>
           </div>
-          <div className="flex justify-between text-center">
-            <i className="fa-light fa-user"></i>
-            <h3>{phoneNumber.formatInternational()}</h3>
-          </div>
+          {phoneNumber && (
+            <div className="flex justify-between text-center">
+              <i className="fa-light fa-user"></i>
+              <h3>{phoneNumber.formatInternational()}</h3>
+            </div>
+          )}
         </div>
       </div>
     </div>
