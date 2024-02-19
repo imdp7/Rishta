@@ -39,7 +39,7 @@ export default function Tags(props: Tag) {
               i: Key | null | undefined
             ) => (
               <span
-                className={`inline-flex items-center rounded-md bg-${tag.color}-50 text-s my-2 px-4 py-2 font-medium text-white ring-1 ring-inset ring-${tag.color}-600/10 hover:bg-${tag.color}-200 hover:cursor-pointer`}
+                className={`inline-flex items-center rounded-md bg-${tag.color}-50 text-s my-2 px-4 py-2 font-medium text-black ring-1 ring-inset ring-${tag.color}-600/10 hover:bg-${tag.color}-200 hover:cursor-pointer`}
                 key={i}
               >
                 {tag.title}
