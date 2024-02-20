@@ -22,12 +22,14 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.1.1",
     "clsx": "^2.1.0",
     "libphonenumber-js": "^1.10.56",
     "next": "14.0.4",
+    "next-share": "^0.27.0",
     "react": "^18",
     "react-dom": "^18",
     "swiper": "^11.0.6"

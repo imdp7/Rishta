@@ -16,6 +16,7 @@ import dp2 from '../../public/dp2.jpeg';
 import '../app/globals.css';
 
 // import required modules
+import React from 'react';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 
 export default function Swipable() {

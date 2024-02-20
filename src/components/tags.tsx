@@ -1,11 +1,4 @@
-import {
-  JSXElementConstructor,
-  Key,
-  PromiseLikeOfReactNode,
-  ReactElement,
-  ReactNode,
-  ReactPortal
-} from 'react';
+import React from 'react';
 
 interface Tag {
   data: any;
@@ -21,31 +14,14 @@ export default function Tags(props: Tag) {
           {props?.title}
         </h2>
         <div className="flex flex-row flex-wrap justify-center space-x-4 py-2">
-          {props.data?.map(
-            (
-              tag: {
-                color: any;
-                title:
-                  | string
-                  | number
-                  | boolean
-                  | ReactElement<any, string | JSXElementConstructor<any>>
-                  | Iterable<ReactNode>
-                  | ReactPortal
-                  | PromiseLikeOfReactNode
-                  | null
-                  | undefined;
-              },
-              i: Key | null | undefined
-            ) => (
-              <span
-                className={`inline-flex items-center rounded-md bg-${tag.color}-50 text-s my-2 px-4 py-2 font-medium text-black ring-1 ring-inset ring-${tag.color}-600/10 hover:bg-${tag.color}-200 hover:cursor-pointer`}
-                key={i}
-              >
-                {tag.title}
-              </span>
-            )
-          )}
+          {props.data?.map((tag: any, i: number) => (
+            <span
+              className={`inline-flex items-center rounded-md bg-${tag.color}-50 text-s my-2 px-4 py-2 font-medium text-white ring-1 ring-inset ring-${tag.color}-600/10 hover:bg-${tag.color}-200 hover:cursor-pointer`}
+              key={i}
+            >
+              {tag.title}
+            </span>
+          ))}
         </div>
       </div>
     </div>

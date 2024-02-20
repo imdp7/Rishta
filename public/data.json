@@ -35,7 +35,8 @@
       },
       {
         "title": "Current City",
-        "data": "Edison NJ"
+        "data": "Edison",
+        "subData": "NJ"
       },
       {
         "title": "Raised in",
@@ -43,6 +44,19 @@
       }
     ],
     "additional_information": [
+      {
+        "title": "Caste",
+        "data": "Koli"
+      },
+      {
+        "title": "Sub Caste",
+        "data": "Leuvas"
+      },
+      {
+        "title": "Diet",
+        "data": "Vegeterian",
+        "subData": "Swaminarayan"
+      },
       {
         "title": "Zodiac",
         "data": "Pieces"
@@ -53,11 +67,11 @@
       },
       {
         "title": "Langauges",
-        "data": "English, Hindi, Gujarati"
+        "data": ["English", "Hindi", "Gujarati"]
       },
       {
         "title": "Interests",
-        "data": "Travelling, Reading, Movies"
+        "data": ["Travelling", "Reading", "Movies"]
       },
       {
         "title": "Marital Status",
@@ -71,7 +85,8 @@
     "education_work": [
       {
         "title": "Education",
-        "data": "New Jersey Institute of Technology (M.S) - 2022"
+        "data": "New Jersey Institute of Technology",
+        "subData": "2022"
       },
       {
         "title": "Major",
@@ -79,7 +94,8 @@
       },
       {
         "title": "Work Experience / Occupation",
-        "data": "BMO Capitals, Clearpoolgroup Trading"
+        "data": "Clearpoolgroup Trading",
+        "subData": "BMO Capitals"
       },
       {
         "title": "Income",
@@ -89,25 +105,54 @@
     "family": [
       {
         "title": "Father",
-        "data": "Rajesh Patel (late)"
+        "data": "Rajesh Patel",
+        "subData": "(Deceased)"
       },
       {
         "title": "Mother",
         "data": "Sonal Patel"
+      },
+      {
+        "title": "Father's Occupation",
+        "data": "Accountant",
+        "subData": "MC Shah CPA, Iselin NJ"
+      },
+      {
+        "title": "Mother's Occupation",
+        "data": "Process Control Associate",
+        "subData": "CompoSecure"
       }
     ],
     "social": [
       {
         "title": "Instagram",
-        "data": "imdp7"
+        "data": "imdp7",
+        "link": "http://www.instagram.com/imdp7",
+        "display": false
+      },
+      {
+        "title": "WhatsApp",
+        "data": "Chat here",
+        "link": "https://wa.me/18482358321",
+        "display": false
       },
       {
         "title": "Facebook",
-        "data": "imdp7"
+        "data": "imdp7",
+        "link": "https://www.facebook.com/profile.php?id=100046303389262",
+        "display": false
       },
       {
-        "title": "Snap",
-        "data": "imdp97"
+        "title": "Snapchat",
+        "data": "imdp97",
+        "link": "https://www.snapchat.com/add/imdp97",
+        "display": false
+      },
+      {
+        "title": "LinkedIn",
+        "data": "imdp7",
+        "link": "https://www.linkedin.com/in/imdp7/",
+        "display": false
       }
     ],
     "interests": [
