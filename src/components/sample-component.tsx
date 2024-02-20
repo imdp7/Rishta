@@ -1,4 +1,5 @@
 import {
+  faAdn,
   faFacebook,
   faInstagram,
   faLinkedin,
@@ -7,9 +8,8 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
-import React from 'react';
 
-export const getIcon = (title) => {
+export const getIcon = (title: string) => {
   switch (title.toLowerCase()) {
     case 'instagram':
       return faInstagram;
@@ -22,7 +22,7 @@ export const getIcon = (title) => {
     case 'linkedin':
       return faLinkedin;
     default:
-      return null;
+      return faAdn;
   }
 };
 

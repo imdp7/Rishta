@@ -1,5 +1,3 @@
-import { faPhone } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import parsePhoneNumber from 'libphonenumber-js';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -43,7 +41,7 @@ export default function Header() {
           </div>
           {phoneNumber && (
             <div className="flex justify-between text-center">
-              <FontAwesomeIcon icon={faPhone} size="2xs" className="w-8" />
+              <i className="fa-light fa-phone"></i>
               <Link href="tel:18482358321">
                 <h3>{phoneNumber.formatInternational()}</h3>
               </Link>
