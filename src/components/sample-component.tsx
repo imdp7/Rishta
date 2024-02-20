@@ -43,9 +43,7 @@ export default function SampleComponent(props: any) {
               )}
               {item.link ? (
                 <div className="mx-auto flex flex-wrap items-center space-x-4">
-                  {getIcon(item.title) && (
-                    <FontAwesomeIcon icon={getIcon(item.title)} size="s" className="w-8" />
-                  )}
+                  {getIcon(item.title) && <FontAwesomeIcon icon={getIcon(item.title)} size="lg" />}
                   <Link href={item.link} target="_blank">
                     <p className="text-center text-base text-blue-500 hover:underline hover:underline-offset-8 active:text-blue-900">
                       {item.data}
