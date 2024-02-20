@@ -192,6 +192,32 @@
         "title": "Vegeterian",
         "color": "yellow"
       }
+    ],
+    "images": [
+      {
+        "src": "/dp.jpeg",
+        "alt": "1"
+      },
+      {
+        "src": "/dp2.jpeg",
+        "alt": "2"
+      },
+      {
+        "src": "/dp3.jpeg",
+        "alt": "3"
+      },
+      {
+        "src": "/dp4.jpeg",
+        "alt": "4"
+      },
+      {
+        "src": "/dp5.jpeg",
+        "alt": "5"
+      },
+      {
+        "src": "/dp6.jpeg",
+        "alt": "6"
+      }
     ]
   }
 ]
