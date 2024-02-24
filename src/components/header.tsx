@@ -1,7 +1,6 @@
 import parsePhoneNumber from 'libphonenumber-js';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 import dp from '../../public/1.jpeg';
 
 export default function Header() {
@@ -10,21 +9,21 @@ export default function Header() {
   return (
     <div className="to flex flex-col flex-wrap justify-between bg-gradient-to-r from-red-500 via-purple-500 to-red-900 px-4 py-8 opacity-100 sm:px-8 lg:px-4">
       <div className="w-full justify-between space-y-3 text-center sm:flex sm:flex-row sm:flex-wrap sm:items-center lg:grid lg:grid-cols-3 lg:gap-4">
-        <div className="font-serif text-3xl font-semibold sm:text-2xl md:text-3xl lg:text-5xl">
+        <div className="shadow-xs font-serif text-3xl font-semibold sm:text-2xl md:text-3xl lg:text-5xl">
           Darshan Patel
         </div>
         <div className="flex justify-center">
           <Image
             src={dp}
             alt="Vercel Logo"
-            className="h-60 w-60 rounded-full object-cover sm:max-w-md"
+            className="h-72 w-72 rounded-full object-cover shadow-inner sm:max-w-md"
             width={100}
             height={20}
             priority
           />
         </div>
         <div className="flex flex-col items-center space-y-2 font-serif">
-          <div className="sm:text-m md:text-l lg:text-xl">Contact Information</div>
+          <div className="sm:text-m md:text-l opacity-70 lg:text-xl">Contact Information</div>
           <div className="sm:text-s md:text-m lg:text-l flex justify-between text-center sm:flex-wrap">
             <i className="fa-light fa-user"></i>
             <div>

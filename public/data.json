@@ -46,7 +46,7 @@
     "additional_information": [
       {
         "title": "Caste",
-        "data": "Koli"
+        "data": "Patel"
       },
       {
         "title": "Sub Caste",
@@ -71,7 +71,7 @@
       },
       {
         "title": "Interests",
-        "data": ["Travelling", "Reading", "Movies"]
+        "data": ["Travelling", "Movies", "Singing"]
       },
       {
         "title": "Marital Status",
@@ -94,8 +94,8 @@
       },
       {
         "title": "Work Experience / Occupation",
-        "data": "Clearpoolgroup Trading",
-        "subData": "BMO Capitals"
+        "data": "Software Engineering",
+        "subData": "Clearpool Group"
       },
       {
         "title": "Income",
@@ -177,6 +177,10 @@
         "color": "yellow"
       },
       {
+        "title": "Singing",
+        "color": "brown"
+      },
+      {
         "title": "Football",
         "color": "green"
       },
@@ -217,6 +221,32 @@
       {
         "src": "/dp6.jpeg",
         "alt": "6"
+      }
+    ],
+    "quest": [
+      {
+        "question": "/dp.jpeg",
+        "answer": "1"
+      },
+      {
+        "question": "/dp2.jpeg",
+        "answer": "2"
+      },
+      {
+        "question": "/dp3.jpeg",
+        "answer": "3"
+      },
+      {
+        "question": "/dp4.jpeg",
+        "answer": "4"
+      },
+      {
+        "question": "/dp5.jpeg",
+        "answer": "5"
+      },
+      {
+        "question": "/dp6.jpeg",
+        "answer": "6"
       }
     ]
   }

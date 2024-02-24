@@ -30,7 +30,7 @@ export default function SampleComponent(props: any) {
   return (
     <div className="max-w-8xl mx-auto py-2">
       <div className="w-full border border-gray-500">
-        <h2 className="border-b border-gray-400 bg-gray-600 px-5 py-2 text-2xl font-semibold text-white opacity-80">
+        <h2 className="border-b border-gray-400 bg-gray-600 px-5 py-2 text-2xl font-semibold text-white opacity-80 shadow-2xl">
           {props.title}
         </h2>
         <div className="m-3 grid grid-cols-2 items-center gap-8 text-center md:grid-cols-3 md:text-justify lg:grid-cols-5">
@@ -43,7 +43,7 @@ export default function SampleComponent(props: any) {
               )}
               {item.link ? (
                 <div className="mx-auto flex flex-wrap items-center space-x-4">
-                  {getIcon(item.title) && <FontAwesomeIcon icon={getIcon(item.title)} size="lg" />}
+                  {getIcon(item.title) && <FontAwesomeIcon icon={getIcon(item.title)} size="2xl" />}
                   <Link href={item.link} target="_blank">
                     <p className="text-center text-base text-blue-500 hover:underline hover:underline-offset-8 active:text-blue-900">
                       {item.data}
@@ -61,10 +61,10 @@ export default function SampleComponent(props: any) {
                     ))
                   ) : (
                     // If data is a string, display it directly
-                    <p className="text-center text-base">{item.data}</p>
+                    <p className="flex-wrap text-center text-base">{item.data}</p>
                   )}
                   {/* Check if subData exists and display it if it does */}
-                  {item.subData && <p className="text-center text-sm opacity-55">{item.subData}</p>}
+                  {item.subData && <p className="text-center text-sm opacity-65">{item.subData}</p>}
                 </div>
               )}
             </div>
