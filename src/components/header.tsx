@@ -27,9 +27,7 @@ export default function Header() {
           <div className="sm:text-s md:text-m lg:text-l flex justify-between text-center sm:flex-wrap">
             <i className="fa-light fa-user"></i>
             <div>
-              <span className="block">2, Dayton Dr,</span>
-              <span className="block">Apt #8A,</span>
-              <span className="block">Edison, NJ, USA - 08820</span>
+              <span className="block">Edison, NJ, USA</span>
             </div>
           </div>
           <div className="flex flex-wrap justify-between text-center">
