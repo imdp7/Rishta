@@ -8,13 +8,6 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
-import {
-  JSXElementConstructor,
-  PromiseLikeOfReactNode,
-  ReactElement,
-  ReactNode,
-  ReactPortal
-} from 'react';
 
 export const getIcon = (title: string) => {
   switch (title.toLowerCase()) {
@@ -43,19 +36,7 @@ function calculateAge(dateOfBirth: string): number {
   return age;
 }
 
-export default function SampleComponent(props: {
-  data: any[];
-  title:
-    | string
-    | number
-    | boolean
-    | ReactElement<any, string | JSXElementConstructor<any>>
-    | Iterable<ReactNode>
-    | ReactPortal
-    | PromiseLikeOfReactNode
-    | null
-    | undefined;
-}) {
+export default function SampleComponent(props: any) {
   const enhancedData = props.data.reduce(
     (acc: { title: string; data: string }[], item: { title: string; data: string }) => {
       if (item.title.toLowerCase() === 'date of birth' && typeof item.data === 'string') {
