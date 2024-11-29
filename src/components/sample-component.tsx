@@ -57,7 +57,7 @@ export default function SampleComponent(props: any) {
           {props.title}
         </h2>
         <div className="m-3 grid grid-cols-2 items-center gap-8 text-center md:grid-cols-3 md:text-justify lg:grid-cols-5">
-          {enhancedData.data?.map((item: any, i: number) => (
+          {enhancedData?.map((item: any, i: number) => (
             <div key={i}>
               {item.display !== false && (
                 <p className={`mb-2 justify-center text-center text-base font-bold opacity-50`}>
