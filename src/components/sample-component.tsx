@@ -8,6 +8,13 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
+import {
+  JSXElementConstructor,
+  PromiseLikeOfReactNode,
+  ReactElement,
+  ReactNode,
+  ReactPortal
+} from 'react';
 
 export const getIcon = (title: string) => {
   switch (title.toLowerCase()) {
@@ -25,8 +32,43 @@ export const getIcon = (title: string) => {
       return faAdn;
   }
 };
+function calculateAge(dateOfBirth: string): number {
+  const dob = new Date(dateOfBirth);
+  const today = new Date();
+  let age = today.getFullYear() - dob.getFullYear();
+  const monthDiff = today.getMonth() - dob.getMonth();
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < dob.getDate())) {
+    age--;
+  }
+  return age;
+}
 
-export default function SampleComponent(props: any) {
+export default function SampleComponent(props: {
+  data: any[];
+  title:
+    | string
+    | number
+    | boolean
+    | ReactElement<any, string | JSXElementConstructor<any>>
+    | Iterable<ReactNode>
+    | ReactPortal
+    | PromiseLikeOfReactNode
+    | null
+    | undefined;
+}) {
+  const enhancedData = props.data.reduce(
+    (acc: { title: string; data: string }[], item: { title: string; data: string }) => {
+      if (item.title.toLowerCase() === 'date of birth' && typeof item.data === 'string') {
+        const age = calculateAge(item.data);
+        acc.unshift({ title: 'Age', data: `${age}` });
+        acc.push(item);
+      } else {
+        acc.push(item);
+      }
+      return acc;
+    },
+    []
+  );
   return (
     <div className="max-w-8xl mx-auto py-2">
       <div className="w-full border border-gray-500">
@@ -34,7 +76,7 @@ export default function SampleComponent(props: any) {
           {props.title}
         </h2>
         <div className="m-3 grid grid-cols-2 items-center gap-8 text-center md:grid-cols-3 md:text-justify lg:grid-cols-5">
-          {props.data?.map((item: any, i: number) => (
+          {enhancedData.data?.map((item: any, i: number) => (
             <div key={i}>
               {item.display !== false && (
                 <p className={`mb-2 justify-center text-center text-base font-bold opacity-50`}>
